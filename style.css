@@ -1,5 +1,6 @@
 body{
   background: #f9d7c2;
+  text-align: center;
 }
 header{
   background: #f9975e;
@@ -69,6 +70,14 @@ div #price-container{
 }
 form{
   text-align: center;
+}
+button{
+  display: block;
+  width: 65px;
+  margin: auto;
+}
+footer{
+  font-size: 10px;
 }
 @media all and (max-width: 800px){
   .use-ul{
