@@ -72,6 +72,7 @@ form{
   text-align: center;
 }
 button{
+  background: #f9975e;
   display: block;
   width: 65px;
   margin: auto;
