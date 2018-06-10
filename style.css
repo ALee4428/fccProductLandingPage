@@ -79,6 +79,9 @@ button{
 footer{
   font-size: 10px;
 }
+#price-image{
+  margin: 50px auto 5px auto;
+}
 @media all and (max-width: 800px){
   .use-ul{
     font-size: 3vw;
