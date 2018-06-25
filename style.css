@@ -4,7 +4,6 @@ body{
 }
 h2{
   margin: 80px auto 40px auto;
-  text-align: center;
 }
 li{
   margin: 20px auto 2px auto;
@@ -105,6 +104,9 @@ footer{
   ul, form, input, p, button{
     font-size: 11px;
   }
+  footer p{
+    font-size: 9px;
+  }
   #video{
     height: 180px;
     width: 320px;
@@ -123,6 +125,7 @@ footer{
       }
       nav a.icon{
         display: inline;
+        font-size: 16px;
         margin: 0;
         padding: 0 15px 15px 15px;
       }
@@ -149,12 +152,13 @@ footer{
   #price-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
       .price{
         background: white;
         border: 5px solid #f9975e;
         border-radius: 5px;
-        margin: 5px 20px 10px 20px;
+        margin: 5px auto 10px auto;
         width: 250px;
         height: 200px;
       }
