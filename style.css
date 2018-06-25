@@ -2,89 +2,163 @@ body{
   background: #f9d7c2;
   text-align: center;
 }
-header{
-  background: #f9975e;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 55px;
-}
-
-.nav-link{
-  color: black;
-  float: right;
-  margin: 20px;
-}
-.nav-link:hover{
-  color: #f9d7c2;
-}
-nav img{
-  float: left;
-  margin: 5px;
-}
-.item{
-  display: inline;
-  float: left;
-  margin: 15px 10px;
-  font-size: 24px;
-}
-.end{
-  margin-right: 40px;
-}
 h2{
   margin: 80px auto 40px auto;
-  text-align: center;
-}
-.about-image{
-  display: block;
-  margin: 10px auto;
-}
-.about-ul{
-  display: inline;
-  margin: 35px auto;
   text-align: center;
 }
 li{
   margin: 20px auto 2px auto;
 }
-#video{
-  display: block;
-  margin: 35px auto 0 auto;
+nav{
+  background: #f9975e;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.use-ul{
-  display: inline;
-  margin: 0 auto 50px auto;
-  text-align: center;
+    nav img{
+      float: left;
+      margin: 5px;
+    }
+    nav .item-name{
+      display: inline;
+      float: left;
+      margin: 15px 10px;
+      font-size: 24px;
+    }
+    nav ul{
+      display: inline;
+      float: right;
+    }
+    nav ul li{
+      display: inline-block;
+      margin-top: 2px;
+    }
+    nav a{
+      color: black;
+      padding: 15px;
+    }
+    nav a:hover{
+      color: #f9d7c2;
+    }
+    nav .icon{
+      display: none;
+    }
+#use{
+  height: 100vh;
 }
-div #price-container{
+    #use ul{
+      display: inline;
+      margin: 0 auto 50px auto;
+      text-align: center;
+    }
+    #video{
+      display: block;
+      height: 360px;
+      margin: 35px auto 0 auto;
+      width: 640px;
+    }
+    #use form{
+      text-align: center;
+    }
+#about{
+  height: 100vh;
+}
+    .about-image{
+      display: block;
+      margin: 10px auto;
+    }
+    .about-ul{
+      display: inline;
+      margin: 35px auto;
+      text-align: center;
+    }
+#price-container{
   display: flex;
   justify-content: center;
 }
-.price{
-  background: white;
-  border: 5px solid #f9975e;
-  border-radius: 5px;
-  margin: 35px 20px 100px 20px;
-  width: 250px;
-  height: 300px;
-}
-form{
-  text-align: center;
-}
-button{
-  background: #f9975e;
-  display: block;
-  width: 65px;
-  margin: auto;
-}
+    .price{
+      background: white;
+      border: 5px solid #f9975e;
+      border-radius: 5px;
+      margin: 35px 20px 100px 20px;
+      width: 250px;
+      height: 300px;
+    }
+    #price-image{
+      margin: 50px auto 5px auto;
+    }
+    button{
+      background: #f9975e;
+      display: block;
+      width: 65px;
+      margin: auto;
+    }
 footer{
   font-size: 10px;
 }
-#price-image{
-  margin: 50px auto 5px auto;
-}
-@media all and (max-width: 800px){
-  .use-ul{
-    font-size: 3vw;
+
+@media screen and (max-width: 600px){
+  h2{
+    font-size: 16px;
   }
+  ul, form, input, p, button{
+    font-size: 11px;
+  }
+  #video{
+    height: 180px;
+    width: 320px;
+  }
+  nav img{
+    display: inline;
+  }
+      nav h1.item-name{
+        display: inline;
+        font-size: 16px;
+        margin: 15px 0 15px 0;
+        padding: 0;
+      }
+      nav a{
+        display: none;
+      }
+      nav a.icon{
+        display: inline;
+        margin: 0;
+        padding: 0 15px 15px 15px;
+      }
+      nav.responsive{
+        overflow: hidden;
+        position: fixed;
+      }
+      nav.responsive ul{
+        display: block;
+      }
+      nav.responsive ul li{
+        display: block;
+      }
+      nav.responsive a{
+        display: block;
+        float: right;
+        text-align: right;
+      }
+      nav.responsive a.icon{
+        display: inline;
+        margin: 0;
+        padding: 0 15px 15px 15px;
+      }
+  #price-container{
+    display: flex;
+    flex-direction: column;
+  }
+      .price{
+        background: white;
+        border: 5px solid #f9975e;
+        border-radius: 5px;
+        margin: 5px 20px 10px 20px;
+        width: 250px;
+        height: 200px;
+      }
+      #price-image{
+        margin: 15px auto 5px auto;
+      }
 }
